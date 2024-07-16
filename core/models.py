@@ -345,8 +345,8 @@ class ChatMessage(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     mid = ShortUUIDField(length=10, max_length=25, alphabet="abcdefghijklmnopqrstuvxyz")
     
-    def __str__(self):
-        return self.user.username
+    #def __str__(self):
+      #  return  self.user
     
     class Meta:
         ordering = ["-date"]
